@@ -1,0 +1,75 @@
+@use "../global" as *;
+
+.hero-section {
+    display: block;
+    margin: 0px;
+    padding: 40px 0;
+    position: relative;
+    .hero-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 1180px;
+        margin: auto;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        @include tablet {
+            position: static;
+            padding: 0 40px;
+        }
+        @include mobile {
+            position: static;
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: $black;
+            font-family: $font-secondary;
+            margin: 0 0 20px;
+            padding: 0;
+            @include tablet {
+                font-size: 40px;
+            }
+            @include mobile {
+                font-size: 30px; 
+               line-height: 1.17;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: center;
+            font-family: $font-main;
+            margin: 0 auto 25px;
+            padding: 0;
+            max-width: 700px;
+            width: 100%;
+            @include mobile {
+                padding: 0 20px;
+                width: auto;
+            }
+        }
+    }
+    img.bg-image {
+        padding: 206px 0 0 0;
+        width: 100%;
+        @include tablet {
+            padding: 0 0 0 0;
+        }
+        @include mobile {
+            padding: 0 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@use "../global" as *;
+
+.announcement {
+    width: 100%;
+    margin: 0px;
+    padding: 8px 0;
+    background-color: $orange;
+    text-align: center;
+    .container {
+        position: relative;
+        p {
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-align: center; 
+            color: #fff;
+            font-family: $font-primary;
+            margin: 0;
+            padding: 0;
+            span {
+                margin: 0 5px 0 0;
+                padding: 0;
+                @include mobile {
+                    display: block;
+                    margin: 0;
+                }
+            }
+        }
+        a {
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2.4px;
+            text-align: center;
+            color: #fff;
+            font-family: $font-primary;
+            margin: 0;
+            padding: 0;
+            text-decoration: underline;
+
+            &:hover {
+                color: $black;
+            }
+        }
+        button.announcement-close-btn {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            background: no-repeat;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            &:hover svg circle {
+                fill: $black;
+            }
+        }
+    }
+}

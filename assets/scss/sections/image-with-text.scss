@@ -1,0 +1,107 @@
+@use "../global" as *;
+
+
+/* Define colors and fonts for consistency */
+$text-color: #302323;
+$button-color: #302323;
+$background-color: #f9f7f4;
+$secondary-background: #fff;
+
+/* Reusable mixin for desktop-first responsiveness */
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+.image-with-text {
+    background-color: $secondary-background;
+    background-image: url('assets/images/ornate-pattern.png');
+    background-repeat: repeat;
+    padding: 80px 0;
+
+    .image-with-text__container {
+        display: flex;
+        flex-direction: column; /* Default stack on mobile */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+
+        @include desktop {
+            flex-direction: row; /* Side-by-side on desktop */
+            text-align: left;
+            justify-content: space-between;
+        }
+    }
+
+    .image-with-text__text {
+        padding-bottom: 30px;
+
+        @include desktop {
+            flex: 1;
+            padding-right: 50px;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $text-color;
+            font-weight: normal;
+        }
+
+        p {
+            color: lighten($text-color, 30%);
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+    }
+
+    .image-with-text__image {
+        flex: 1;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @include desktop {
+            max-width: 50%; /* Image container width on desktop */
+        }
+    }
+
+    // Button style
+    .image-with-text__button {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid $button-color;
+        background-color: $button-color;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $button-color;
+        }
+    }
+}
+
+.image-with-text--reversed {
+    .image-with-text__container {
+        @include desktop {
+            flex-direction: row-reverse; /* Flips the columns */
+        }
+    }
+
+    .image-with-text__text {
+        @include desktop {
+            padding-right: 0;
+            padding-left: 50px;
+        }
+    }
+}
