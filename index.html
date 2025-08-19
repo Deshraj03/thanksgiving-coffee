@@ -24,27 +24,6 @@
         </div>
         <div class="container">
             <div class="navbar">
-                <div class="search-bar hidden">
-                    <input type="text" placeholder="Search...">
-                    <button class="submit"> <svg width="26" height="26" viewBox="0 0 26 26"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g stroke="#231F20" stroke-width="2" fill="none" fill-rule="evenodd">
-                                <circle cx="10.175" cy="10.175" r="9.175" />
-                                <path stroke-linecap="square" d="M24.167 24.167 17.5 17.5" />
-                            </g>
-                        </svg>
-                    </button>
-                    <button class="close-search"><svg width="15" height="15" viewBox="0 0 15 15"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <circle fill="#FFF" cx="7.5" cy="7.5" r="7.5" />
-                                <g stroke="#302323" stroke-linecap="square" stroke-width="2">
-                                    <path d="M10.291 4.709 4.708 10.29M10.292 10.291 4.709 4.71" />
-                                </g>
-                            </g>
-                        </svg></button>
-                </div>
-
                 <div class="logo">
                     <h1><a href="#"> <svg width="104" height="57" viewBox="0 0 104 57"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -56,25 +35,79 @@
                 </div>
                 <nav class="nav-left">
                     <ul>
-                        <li>
+                        <li class="has-mega">
                             <a href="#">Shop</a>
-                            <ul>
-                                <li><a href="#">Coffee</a></li>
-                                <li><a href="#">Equipment</a></li>
-                                <li><a href="#">Gifts</a></li>
-                            </ul>
+                            <div class="mega-menu">
+                                <div class="mega-menu-container">
+                                    <div class="mega-column">
+                                        <h4>By Roast</h4>
+                                        <ul>
+                                            <li><a href="#">Light</a></li>
+                                            <li><a href="#">Medium</a></li>
+                                            <li><a href="#">Dark</a></li>
+                                            <li><a href="#">Very Dark</a></li>
+                                            <li><a href="#">Blends</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4>By Type</h4>
+                                        <ul>
+                                            <li><a href="#">Single Origin</a></li>
+                                            <li><a href="#">Organic</a></li>
+                                            <li><a href="#">Bird Friendly</a></li>
+                                            <li><a href="#">Espresso</a></li>
+                                            <li><a href="#">Flavored</a></li>
+                                            <li><a href="#">Decaf</a></li>
+                                            <li><a href="#">CBD Coffees</a></li>
+                                            <li><a href="#">Cause Coffees</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4>Coffee Clubs</h4>
+                                        <ul>
+                                            <li><a href="#">Roast Master’s Select</a></li>
+                                            <li><a href="#">Single Origin</a></li>
+                                            <li><a href="#">Dark Roast</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4><a href="#">Numi Teas</a></h4>
+                                        <h4><a href="#">Accessories</a></h4>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">Clubs</a>
-                            <ul>
-                                <li><a href="#">Monthly Club</a></li>
-                                <li><a href="#">Premium Club</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#">Clubs</a></li>
                         <li><a href="#">Wholesale</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
+                        <li class="has-short-mega">
+                            <a href="#">About</a>
+                            <div class="mega-menu about-menu">
+                                <div class="mega-menu-container">
+                                    <div class="mega-column">
+                                        <h4>About Us</h4>
+                                        <ul>
+                                            <li><a href="#">Our Story</a></li>
+                                            <li><a href="#">Our Farmers</a></li>
+                                            <li><a href="#">Awards & Recognition</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-column">
+                                        <h4>Learn</h4>
+                                        <ul>
+                                            <li><a href="#">Cause Coffees</a></li>
+                                            <li><a href="#" class="highlight">CBD Coffee</a></li>
+                                            <li><a href="#">Coffee 101</a></li>
+                                            <li><a href="#">The Blog</a></li>
+                                            <li><a href="#">Impact Report</a></li>
+                                            <li><a href="#">Land Acknowledgement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
+                    </ul>
                 </nav>
                 <div class="nav-right">
                     <ul>
@@ -119,9 +152,31 @@
                             </g>
                         </g>
                     </svg>
-
-
                 </button>
+            </div>
+            <div class="search-bar hidden">
+                <form>
+                    <svg class="icon-search" width="26" height="26" viewBox="0 0 26 26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#f1ece6" stroke-width="2" fill="none" fill-rule="evenodd">
+                            <circle cx="10.175" cy="10.175" r="9.175" />
+                            <path stroke-linecap="square" d="M24.167 24.167 17.5 17.5" />
+                        </g>
+                    </svg>
+                    <input type="text" placeholder="Search Products & Blog">
+                    <button class="submit">
+                        SEARCH
+                    </button>
+                    <button class="close-search">
+                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <circle fill="#FFF" cx="7.5" cy="7.5" r="7.5" />
+                                <g stroke="#302323" stroke-linecap="square" stroke-width="2">
+                                    <path d="M10.291 4.709 4.708 10.29M10.292 10.291 4.709 4.71" />
+                                </g>
+                            </g>
+                        </svg></button>
+                </form>
             </div>
     </header>
 
@@ -162,7 +217,7 @@
 
 
     <section class="awards-section" id="awards-slider">
-        <div class="splide__track">  
+        <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
                     <img src="assets/images/icon-awards-roaster.png" alt="Roast Magazine">
@@ -171,7 +226,7 @@
                 <li class="splide__slide">
                     <img src="assets/images/icon-benefits-b-crop.png" alt="Global Citizenship">
                     <p>CERTIFIED B CORPORATION</p>
-                <li class="splide__slide"> 
+                <li class="splide__slide">
                     <img src="assets/images/icon-awards-good-food.png" alt="Good Food Award">
                     <p>GOOD FOOD AWARD WINNER</p>
                 </li>
@@ -192,7 +247,7 @@
     <section class="coffee-shop-section">
         <div class="content-container">
             <div class="text-content">
-                <span class="since-text">SINCE 1972</span>
+                <h6 class="since-text">SINCE 1972</h6>
                 <h1>Not Just A Cup, But A Just Cup.</h1>
                 <p>Interdependence is grown into every bean we offer. We work to inspire health and happiness in our
                     farmers, coffee drinkers, and the World.</p>

@@ -1,35 +1,26 @@
 @use "../global" as *;
 
-
-/* Define custom variables for colors and fonts */
-$primary-color: #b32226;
-$text-color: #302323;
-$background-color: #f9f7f4;
-$font-family-serif: 'Times New Roman', serif;
-$font-family-sans: 'Arial', sans-serif;
-
-.coffee-shop-section {
-    background-color: $background-color;
-    padding: 80px 0; /* Adjust padding as needed */
+.coffee-shop-section { 
+    padding: 80px 0;
     position: relative;
 
     .content-container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 1200px; /* Max width to contain content */
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
 
         .text-content {
             flex: 1;
-            padding-right: 50px; /* Space between text and image */
+            padding-right: 50px;
             text-align: left;
-            
+
             .since-text {
-                font-family: $font-family-sans;
+                font-family: $font-primary;
                 font-size: 14px;
-                color: $primary-color;
+                color: $orange;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 margin-bottom: 10px;
@@ -37,22 +28,22 @@ $font-family-sans: 'Arial', sans-serif;
             }
 
             h1 {
-                font-family: $font-family-serif;
+               font-family: $font-primary;
                 font-size: 48px;
-                color: $text-color;
+                color: $black;
                 line-height: 1.1;
                 margin-bottom: 20px;
             }
 
             p {
-                font-family: $font-family-sans;
+                font-family: $font-primary;
                 font-size: 16px;
-                color: $text-color;
+                color: $black;
                 line-height: 1.5;
                 margin-bottom: 30px;
             }
         }
-        
+
         .image-content {
             flex: 1;
             display: flex;
@@ -61,7 +52,7 @@ $font-family-sans: 'Arial', sans-serif;
 
             .diagonal-image {
                 max-width: 100%;
-                height: auto; 
+                height: auto;
             }
         }
     }
@@ -72,26 +63,26 @@ $font-family-sans: 'Arial', sans-serif;
     gap: 15px;
 
     button {
-        font-family: $font-family-sans;
+        font-family: $font-primary;
         font-size: 14px;
         font-weight: bold;
         padding: 10px 20px;
         background-color: transparent;
-        border: 1px solid $text-color;
-        color: $text-color;
+        border: 1px solid $black;
+        color: $black;
         cursor: pointer;
         transition: all 0.3s ease;
         text-transform: uppercase;
 
         &.active {
-            background-color: $text-color;
-            color: $background-color;
+            background-color: $black;
+            color: $black;
         }
 
         &:hover {
-            background-color: darken($text-color, 10%);
+            background-color: darken($black, 10%);
             color: white;
-            border-color: darken($text-color, 10%);
+            border-color: darken($black, 10%);
         }
     }
 }
@@ -142,7 +133,6 @@ $font-family-sans: 'Arial', sans-serif;
                     font-weight: bold;
                 }
 
-                /* Hover effect for the "add to bag" overlay */
                 .hover-overlay {
                     position: absolute;
                     top: 0;
@@ -164,7 +154,6 @@ $font-family-sans: 'Arial', sans-serif;
                 }
             }
 
-            /* Trigger the hover effect on the product card */
             &:hover .hover-overlay {
                 opacity: 1;
             }

@@ -8,6 +8,9 @@
     text-align: center;
     .container {
         position: relative;
+        @include mobile{
+            padding: 0 30px;
+        }
         p {
             font-size: 14px;
             font-weight: bold;
@@ -16,15 +19,14 @@
             line-height: normal;
             letter-spacing: 3px;
             text-align: center; 
-            color: #fff;
+            color: $white;
             font-family: $font-primary;
             margin: 0;
             padding: 0;
             span {
                 margin: 0 5px 0 0;
                 padding: 0;
-                @include mobile {
-                    display: block;
+                @include mobile { 
                     margin: 0;
                 }
             }
@@ -37,7 +39,7 @@
             line-height: normal;
             letter-spacing: 2.4px;
             text-align: center;
-            color: #fff;
+            color: $white;
             font-family: $font-primary;
             margin: 0;
             padding: 0;
@@ -55,8 +57,15 @@
             border: 0;
             padding: 0;
             cursor: pointer;
-            &:hover svg circle {
-                fill: $black;
+            @include mobile{
+                right: 10px;
+            }
+            svg {
+                width:20px;
+                height: 20px;
+            }
+            &:hover svg path{
+                stroke: $dark-charcoal-brown;
             }
         }
     }
