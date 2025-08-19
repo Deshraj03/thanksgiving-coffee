@@ -140,19 +140,31 @@
                                 <div class="cart-item-counter">0</div>
                             </a>
                         </li>
+                        <li class="desktop-hidden">
+                            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                                <svg class="menu-open" width="30" height="30" viewBox="0 0 30 30"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#FFF" fill-rule="evenodd">
+                                        <path d="M0 2h30v3H0zM0 12h30v3H0z" />
+                                        <g fill-rule="nonzero">
+                                            <path
+                                                d="M5.11 22h1.07v6.243H4.969V24.54l-1.435 2.674h-.885l-1.435-2.638v3.666H0V22h1.09l2.01 3.816zM9.209 28.243V22h4.303v1.071h-2.957v1.461h2.78v1.072h-2.78v1.567h2.957v1.072zM20.357 22h1.293v6.243h-1.027l-3.108-3.976v3.976H16.23V22h1.018l3.108 3.958zM27.308 28.322c-.874 0-1.54-.225-1.997-.677-.457-.452-.686-1.111-.686-1.98V22h1.355v3.728c0 .496.114.874.34 1.133.228.26.557.39.988.39.431 0 .762-.131.992-.394.23-.263.345-.64.345-1.13V22H30v3.666c0 .862-.23 1.52-.69 1.974-.461.455-1.128.682-2.002.682z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <svg class="menu-close" width="30" height="30" viewBox="9 9 26 26"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#ffffff" fill-rule="evenodd">
+                                        <path d="M33.667 11.954 12.454 33.167l-2.121-2.121L31.546 9.833z" />
+                                        <path d="m12.454 9.833 21.213 21.213-2.121 2.121-21.213-21.213z" />
+                                    </g>
+                                </svg>
+
+                            </button>
+                        </li>
                     </ul>
                 </div>
-                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="#FFF" fill-rule="evenodd">
-                            <path d="M0 2h30v3H0zM0 12h30v3H0z" />
-                            <g fill-rule="nonzero">
-                                <path
-                                    d="M5.11 22h1.07v6.243H4.969V24.54l-1.435 2.674h-.885l-1.435-2.638v3.666H0V22h1.09l2.01 3.816zM9.209 28.243V22h4.303v1.071h-2.957v1.461h2.78v1.072h-2.78v1.567h2.957v1.072zM20.357 22h1.293v6.243h-1.027l-3.108-3.976v3.976H16.23V22h1.018l3.108 3.958zM27.308 28.322c-.874 0-1.54-.225-1.997-.677-.457-.452-.686-1.111-.686-1.98V22h1.355v3.728c0 .496.114.874.34 1.133.228.26.557.39.988.39.431 0 .762-.131.992-.394.23-.263.345-.64.345-1.13V22H30v3.666c0 .862-.23 1.52-.69 1.974-.461.455-1.128.682-2.002.682z" />
-                            </g>
-                        </g>
-                    </svg>
-                </button>
+
             </div>
             <div class="search-bar hidden">
                 <form>
@@ -178,7 +190,135 @@
                         </svg></button>
                 </form>
             </div>
+            <!-- Sidebar Menu -->
+            <div id="mobileMenu" class="sidebar">
+                <ul class="menu">
+                    <li>
+                        <button class="submenu-toggle">Shop <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.1875 11.8125L8.8125 7.5L3.1875 3.1875" stroke="#231F20" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+                        <ul class="submenu">
+                            <li><button class="back-to-main"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8125 11.8125L6.1875 7.5L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg> Back </button></li>
+                            <li>
+                                <button class="submenu-toggle">By Roast <svg width="15" height="15" viewBox="0 0 15 15"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.1875 3.1875L7.5 8.8125L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                                <ul class="child-submenu">
+                                    <li><a href="#">Light Roast</a></li>
+                                    <li><a href="#">Medium Roast</a></li>
+                                    <li><a href="#">Dark Roast</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="submenu-toggle">By Type <svg width="15" height="15" viewBox="0 0 15 15"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.1875 3.1875L7.5 8.8125L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                                <ul class="child-submenu">
+                                    <li><a href="#">Whole Bean</a></li>
+                                    <li><a href="#">Ground</a></li>
+                                    <li><a href="#">Pods</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Coffee Clubs</a></li>
+                            <li><a href="#">Numi Teas</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button class="submenu-toggle">About <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.1875 11.8125L8.8125 7.5L3.1875 3.1875" stroke="#231F20" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+
+                        <ul class="submenu">
+                            <li><button class="back-to-main"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8125 11.8125L6.1875 7.5L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg> Back </button></li>
+                            <li>
+                                <button class="submenu-toggle">About Us <svg width="15" height="15" viewBox="0 0 15 15"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.1875 3.1875L7.5 8.8125L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                                <ul class="child-submenu">
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="#">Our Farmers</a></li>
+                                    <li><a href="#">Awards & Recognition</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="submenu-toggle">Learn <svg width="15" height="15" viewBox="0 0 15 15"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.1875 3.1875L7.5 8.8125L11.8125 3.1875" stroke="#231F20"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                                <ul class="child-submenu">
+                                    <li><a href="#">Cause Coffees</a></li>
+                                    <li><a href="#">Coffee 101</a></li>
+                                    <li><a href="#">The Blog</a></li>
+                                    <li><a href="#">Impact Report</a></li>
+                                    <li><a href="#">Land Acknowledgement</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </li>
+
+                    <li><a href="#">Clubs</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li>
+                        <div class="search-bar">
+                            <form>
+                                <div class="search-input-wrapper">
+                                    <svg class="icon-search" width="26" height="26" viewBox="0 0 26 26"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g stroke="#f1ece6" stroke-width="2" fill="none" fill-rule="evenodd">
+                                            <circle cx="10.175" cy="10.175" r="9.175" />
+                                            <path stroke-linecap="square" d="M24.167 24.167 17.5 17.5" />
+                                        </g>
+                                    </svg>
+                                    <input type="text" placeholder="Search Products & Blog">
+                                </div>
+                                <button class="submit">
+                                    SEARCH
+                                </button>
+                                <button class="close-search">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <circle fill="#FFF" cx="7.5" cy="7.5" r="7.5" />
+                                            <g stroke="#302323" stroke-linecap="square" stroke-width="2">
+                                                <path d="M10.291 4.709 4.708 10.29M10.292 10.291 4.709 4.71" />
+                                            </g>
+                                        </g>
+                                    </svg></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
     </header>
+
+
 
     <div class="splide banner-slider" id="banner-slider">
         <div class="splide__track">
@@ -216,26 +356,36 @@
     </div>
 
 
-    <section class="awards-section" id="awards-slider">
+    <section class="splide awards-section" id="awards-slider">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <img src="assets/images/icon-awards-roaster.png" alt="Roast Magazine">
+                    <div class="image-wrapper">
+                        <img src="assets/images/icon-awards-roaster.png" alt="Roast Magazine">
+                    </div>
                     <p>ROAST MAGAZINE ROASTER OF THE YEAR</p>
                 </li>
                 <li class="splide__slide">
-                    <img src="assets/images/icon-benefits-b-crop.png" alt="Global Citizenship">
+                    <div class="image-wrapper">
+                        <img src="assets/images/icon-benefits-b-crop.png" alt="Global Citizenship">
+                    </div>
                     <p>CERTIFIED B CORPORATION</p>
                 <li class="splide__slide">
-                    <img src="assets/images/icon-awards-good-food.png" alt="Good Food Award">
+                    <div class="image-wrapper">
+                        <img src="assets/images/icon-awards-good-food.png" alt="Good Food Award">
+                    </div>
                     <p>GOOD FOOD AWARD WINNER</p>
                 </li>
                 <li class="splide__slide">
-                    <img src="assets/images/icon-awards-citizen-award.png" alt="Certified B Corporation">
+                    <div class="image-wrapper">
+                        <img src="assets/images/icon-awards-citizen-award.png" alt="Certified B Corporation">
+                    </div>
                     <p>GLOBAL CITIZENSHIP AWARD</p>
                 </li>
                 <li class="splide__slide">
-                    <img src="assets/images/icon-benefits-b-crop.png" alt="B Labs Best for World">
+                    <div class="image-wrapper">
+                        <img src="assets/images/icon-benefits-b-crop.png" alt="B Labs Best for World">
+                    </div>
                     <p>B LABS BEST FOR THE WORLD COMMUNITY</p>
                 </li>
             </ul>
@@ -243,79 +393,270 @@
     </section>
 
 
-
     <section class="coffee-shop-section">
-        <div class="content-container">
+        <div class="content-container container">
             <div class="text-content">
                 <h6 class="since-text">SINCE 1972</h6>
-                <h1>Not Just A Cup, But A Just Cup.</h1>
+                <h2>Not Just A Cup, But A Just Cup.</h2>
+                <svg width="40" height="6" viewBox="0 0 40 6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.17 2.783 0 5.148V0l39.17 1.578z" fill="#D97F1F" fill-rule="evenodd" />
+                </svg>
+
                 <p>Interdependence is grown into every bean we offer. We work to inspire health and happiness in our
                     farmers, coffee drinkers, and the World.</p>
-                <div class="button-group">
-                    <button class="active">FEATURED COFFEES</button>
-                    <button>COFFEE CLUBS</button>
-                    <button>SHOP ALL</button>
-                </div>
             </div>
             <div class="image-content">
                 <img src="assets/images/coffee-farm.png"
-                    alt="A black and white photo of a coffee farm building with people and a dog."
-                    class="diagonal-image">
+                    alt="A black and white photo of a coffee farm building with people and a dog.">
             </div>
         </div>
-        <div class="products-container">
-            <div class="product-grid">
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/coffee-bag-1.png" alt="Nicaragua - Flor de Jinotega Coffee Bag">
-                    </div>
-                    <div class="product-details">
-                        <span class="roast-type">LIGHT ROAST</span>
-                        <span class="flavor-profile">SWEET, FRUITY, CHOCOLATEY</span>
-                        <h3 class="product-name">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                        <div class="product-price">
-                            <span class="current-price">$18.00</span>
-                        </div>
-                        <div class="product-reviews">
-                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                            <span class="review-count">108 REVIEWS</span>
+        <div class="tab-content-container">
+            <div class="container">
+                <div class="collection-tabs">
+                    <button class="tab-btn active" data-tab="featured">Featured Coffees</button>
+                    <button class="tab-btn" data-tab="clubs">Coffee Clubs</button>
+                    <button class="tab-btn" data-tab="shopall">Shop All</button>
+                </div>
+            </div>
+            <div class="tab-content active" id="featured">
+                <div class="container">
+                    <div class="slider-container">
+                        <div id="product-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast
+                                                    Sweet, Fruity, Chocolatey</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> 100 REVIEWS</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="tab-content" id="clubs">
+                <div class="container">
+                    <div class="slider-container">
+                        <div id="coffee-clubs-product-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast
+                                                    Sweet, Fruity, Chocolatey</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="shopall">
+                <div class="container">
+                    <div class="slider-container">
+                        <div id="product-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="product-card">
+                                            <div class="image-wrapper">
+                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                                <div class="hover-overlay">
+                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-inner">
+                                                <span class="product-roast">Light Roast
+                                                    Sweet, Fruity, Chocolatey</span>
+                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                                <p class="product-price">$18.00</p>
+                                                <!-- Star Rating -->
+                                                <div class="rating-stars">
+
+                                                </div>
+                                                <p class="product-reviews">100 REVIEWS</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="image-with-text">
-        <div class="image-with-text__container">
-            <div class="image-with-text__text">
-                <h2>News, Videos & More</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin diam finibus mi congue,
-                    at dictum est consectetur. Aliquam vel scelerisque orci.</p>
-                <a href="#" class="image-with-text__button">VISIT THE BLOG</a>
-            </div>
-            <div class="image-with-text__image">
-                <img src="assets/images/latte-art.jpg" alt="A person pouring milk to create latte art in a coffee cup.">
+    <section class="image-with-text ">
+        <div class="container">
+            <div class="image-with-text-container">
+                <div class="image-with-text-image">
+                    <div class="image-wrapper"><img src="assets/images/4-tasting-coffee-from-this-harvest.jpg"
+                            alt="A coffee farmer wearing a hat, drinking coffee from a mug."></div>
+                </div>
+                <div class="image-with-text-text">
+                    <h2>From Farm to Cup</h2>
+                    <p>We are proud to partner with amazing farmers and coffee cooperatives from around the Globe: each
+                        one
+                        offers a unique soil, varietal, and climate. Meet the amazing farmers who grow your delicious
+                        coffee!</p>
+                    <a href="#" class="btn">MEET OUR FARMERS</a>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="image-with-text image-with-text--reversed">
-        <div class="image-with-text__container">
-            <div class="image-with-text__text">
-                <h2>From Farm to Cup</h2>
-                <p>We are proud to partner with amazing farmers and coffee cooperatives from around the Globe: each one
-                    offers a unique soil, varietal, and climate. Meet the amazing farmers who grow your delicious
-                    coffee!</p>
-                <a href="#" class="image-with-text__button">MEET OUR FARMERS</a>
-            </div>
-            <div class="image-with-text__image">
-                <img src="assets/images/coffee-farmer.jpg"
-                    alt="A coffee farmer wearing a hat, drinking coffee from a mug.">
+    <section class="image-with-text image-with-text-reversed">
+        <div class="container">
+            <div class="image-with-text-container">
+                <div class="image-with-text-image">
+                    <div class="image-wrapper"><img src="assets/images/coffee-cup.jpg"
+                            alt="A person pouring milk to create latte art in a coffee cup."></div>
+                </div>
+                <div class="image-with-text-text">
+                    <h2>News, Videos & More</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin diam finibus mi
+                        congue,
+                        at dictum est consectetur. Aliquam vel scelerisque orci.</p>
+                    <a href="#" class="btn">VISIT THE BLOG</a>
+                </div>
             </div>
         </div>
     </section>

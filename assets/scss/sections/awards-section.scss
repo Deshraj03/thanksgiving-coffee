@@ -19,10 +19,20 @@
             @include mobile {
                 padding: 0 25px;
             }
-            img {
-                max-width: 60px;
+            .image-wrapper {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 margin: 0 auto 10px;
-                display: block;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: inline-block;
+                }
             }
 
             p {

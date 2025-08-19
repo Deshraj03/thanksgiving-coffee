@@ -51,8 +51,14 @@ body {
         padding: 0 10px;
     }
 }
+.desktop-hidden{
+        display: none;
+    }
 @include mobile {
     .hide-m {
         display: none;
+    }
+    .desktop-hidden{
+        display: block;
     }
 }

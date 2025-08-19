@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('.announcement-close-btn');
 
 closeBtn.addEventListener('click', function () {
   announcement.style.display = 'none';
-  header.classList.add('header-bg'); 
+  header.classList.add('header-bg');
 });
 
 
@@ -50,20 +50,141 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplay: true,
     interval: 4000,
   }).mount();
- 
+
 });
- 
+
 // Banner-slider
 
 document.addEventListener('DOMContentLoaded', function () {
   const splide = new Splide('#awards-slider', {
-    type: 'loop',
+    type: 'carousel',
     perPage: 5,
     arrows: false,
-    pagination: true,
-    autoplay: true,
+    pagination: false,
+    autoplay: false,
     interval: 4000,
-  }).mount();
- 
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 3 },
+      480: { perPage: 3 }
+    }
+  });
+
+  splide.mount();
 });
- 
+
+// Sidebar open/close toggle
+const menuToggle = document.querySelector(".nav-toggle");
+const sidebar = document.getElementById("mobileMenu");
+
+if (menuToggle && sidebar) {
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector("#mobileMenu");
+
+
+  menu.querySelectorAll(".submenu-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const submenu = toggle.nextElementSibling;
+
+      if (submenu && (submenu.classList.contains("submenu") || submenu.classList.contains("child-submenu"))) {
+
+        const siblings = submenu.parentElement.parentElement.querySelectorAll(".submenu.active, .child-submenu.active");
+        siblings.forEach(sib => {
+          if (sib !== submenu) {
+            sib.classList.remove("active", "slideInFromRight", "slideInFromLeft");
+          }
+        });
+
+
+        if (submenu.classList.contains("active")) {
+          submenu.classList.remove("active");
+        } else {
+          submenu.classList.add("active", "slideInFromRight");
+          submenu.addEventListener("animationend", () => {
+            submenu.classList.remove("slideInFromRight");
+          }, { once: true });
+        }
+      }
+    });
+  });
+
+
+  menu.querySelectorAll(".back-to-main").forEach(backBtn => {
+    backBtn.addEventListener("click", () => {
+      const currentSubmenu = backBtn.closest(".submenu, .child-submenu");
+
+      currentSubmenu.classList.add("slideInFromLeft");
+      currentSubmenu.addEventListener("animationend", () => {
+        currentSubmenu.classList.remove("active", "slideInFromLeft");
+      }, { once: true });
+    });
+  });
+});
+
+// collection Tab 
+document.addEventListener("DOMContentLoaded", () => {
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabBtns.forEach(b => b.classList.remove("active"));
+      tabContents.forEach(c => c.classList.remove("active"));
+
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.tab).classList.add("active");
+    });
+  });
+});
+
+
+// product-slider
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#product-slider', {
+    type: 'carousel',
+    perPage: 4,
+    perMove: 1,
+    arrows: true,
+    gap: '10px',
+    pagination: false,
+    autoplay: false,
+    interval: 3000,
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 }
+    }
+  });
+
+  splide.mount();
+});
+// product-slider
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#coffee-clubs-product-slider', {
+    type: 'carousel',
+    perPage: 4,
+    perMove: 1,
+    arrows: true,
+    gap: '10px',
+    pagination: false,
+    autoplay: false,
+    interval: 3000,
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 }
+    }
+  });
+
+  splide.mount();
+});
+

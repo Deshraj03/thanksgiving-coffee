@@ -1,46 +1,65 @@
 @use "../global" as *;
 
-.coffee-shop-section { 
-    padding: 80px 0;
+.coffee-shop-section {
+    padding: 80px 0 0;
     position: relative;
-
+    overflow: hidden;
+    @include mobile {
+        padding: 60px 0;
+    }
     .content-container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
 
         .text-content {
             flex: 1;
             padding-right: 50px;
             text-align: left;
+            @include mobile {
+                flex: auto;
+                padding-right: 0;
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
 
             .since-text {
                 font-family: $font-primary;
                 font-size: 14px;
-                color: $orange;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                margin-bottom: 10px;
-                display: block;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 3px;
+                text-align: left;
+                color: $dark-charcoal-brown;
             }
 
-            h1 {
-               font-family: $font-primary;
-                font-size: 48px;
-                color: $black;
-                line-height: 1.1;
-                margin-bottom: 20px;
+            h2 {
+                font-family: $font-secondary;
+                color: $dark-charcoal-brown;
+                font-size: 80px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                margin: 0 0 15px;
+                @include mobile {
+                    font-size: 45px;
+                }
             }
 
             p {
                 font-family: $font-primary;
+                color: $dark-charcoal-brown;
                 font-size: 16px;
-                color: $black;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
                 line-height: 1.5;
-                margin-bottom: 30px;
+                letter-spacing: normal;
             }
         }
 
@@ -50,163 +69,156 @@
             justify-content: center;
             align-items: center;
 
-            .diagonal-image {
-                max-width: 100%;
-                height: auto;
+            img {
+                position: absolute;
+                right: 0;
+                top: 0;
+                max-width: 720px;
+                @include mobile {
+                    left: 70%;
+                    max-width: 480px;
+                }
+            }
+        }
+        svg {
+            display: block;
+            margin: 0px 0 15px;
+            padding: 0px;
+        }
+    }
+
+    .collection-tabs {
+        display: flex;
+        gap: 15px;
+        margin: 0 0 30px 0;
+
+        button {
+            font-family: $font-primary;
+            font-size: 14px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2.8px;
+            text-align: center;
+            border: 1px solid $dark-charcoal-brown;
+            color: $dark-charcoal-brown;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border-radius: 5px;
+            background: transparent;
+
+            &.active {
+                background-color: $dark-charcoal-brown;
+                color: $white;
+            }
+
+            &:hover {
+                background-color: $dark-charcoal-brown;
+                color: $white;
             }
         }
     }
-}
-
-.button-group {
-    display: flex;
-    gap: 15px;
-
-    button {
-        font-family: $font-primary;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 10px 20px;
-        background-color: transparent;
-        border: 1px solid $black;
-        color: $black;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-
-        &.active {
-            background-color: $black;
-            color: $black;
-        }
-
-        &:hover {
-            background-color: darken($black, 10%);
-            color: white;
-            border-color: darken($black, 10%);
-        }
-    }
-}
-
-.products-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0 40px;
-
-    .product-grid {
-        display: flex;
-        gap: 30px;
-        align-items: flex-start;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-
-        &::-webkit-scrollbar {
+    .tab-content-container {
+        margin: 80px 0 0;
+        padding: 0;
+        width: 100%;
+        .tab-content {
             display: none;
+            text-align: center;
+            &.active {
+                display: block;
+            }
+        }
+        .container {
+            display: inline-block;
+        }
+        .image-wrapper {
+            display: block;
+            width: 100%;
+            position: relative;
+            height: calc(25vw - 30px);
+            max-height: 270px;
+            @include mobile {
+                height: calc(80vw - 30px);
+            }
+            img {
+                position: absolute;
+                -o-object-fit: cover;
+                object-fit: cover;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+            }
         }
         .product-card {
-            min-width: 250px;
-            background-color: #f9f7f4;
-            padding: 15px;
-            text-align: center;
-
-            .product-image {
-                position: relative;
-                margin-bottom: 15px;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                }
-
-                .sale-tag {
-                    position: absolute;
-                    top: 10px;
-                    left: 0;
-                    background-color: #b32226;
-                    color: white;
-                    padding: 5px 10px;
-                    font-size: 12px;
-                    font-weight: bold;
-                }
-
-                .hover-overlay {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(#302323, 0.7);
-                    display: flex;
+            padding: 20px;
+            background-color: #f1ece6;
+            text-align: left;
+            height: 100%;
+            span.product-roast {
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                color: $dark-charcoal-brown;
+                opacity: 0.5;
+                font-family: $font-primary;
+            }
+            h3.product-title {
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.15;
+                letter-spacing: normal;
+                font-family: $font-secondary;
+                margin: 0 0 40px;
+                color: $dark-charcoal-brown;
+            }
+            p.product-price {
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $dark-charcoal-brown;
+                font-family: $font-primary;
+            }
+            .product-reviews {
+                color: $dark-charcoal-brown;
+                font-family: $font-primary;
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                display: inline-flex;
+                gap: 10px;
+                margin: 0px;
+                padding: 0px;
+                align-items: center;
+                justify-content: center;
+                .rating-stars {
+                    display: inline-flex;
+                    gap: 2px;
+                    margin: 0px;
+                    padding: 0px;
                     align-items: center;
                     justify-content: center;
-                    opacity: 0;
-                    transition: opacity 0.3s ease-in-out;
-
-                    .overlay-text {
-                        color: white;
-                        font-weight: bold;
-                        letter-spacing: 1px;
-                    }
-                }
-            }
-
-            &:hover .hover-overlay {
-                opacity: 1;
-            }
-
-            .product-details {
-                text-align: left;
-
-                span {
-                    display: block;
-                }
-
-                .roast-type {
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: #b32226;
-                }
-
-                .flavor-profile {
-                    font-size: 12px;
-                    color: #302323;
-                    margin-bottom: 5px;
-                }
-
-                .product-name {
-                    font-size: 18px;
-                    font-weight: bold;
-                    color: #302323;
-                    margin-bottom: 10px;
-                }
-
-                .product-price {
-                    .current-price,
-                    .sale-price {
-                        font-size: 16px;
-                        font-weight: bold;
-                        color: #302323;
-                    }
-
-                    .original-price {
-                        font-size: 14px;
-                        color: #999;
-                        text-decoration: line-through;
-                    }
-                }
-
-                .product-reviews {
-                    .stars {
-                        color: #f9d71c; /* A nice yellow for the stars */
-                    }
-
-                    .review-count {
-                        font-size: 12px;
-                        color: #777;
+                    svg {
+                        width: 15px;
+                        height: 15px;
                     }
                 }
             }

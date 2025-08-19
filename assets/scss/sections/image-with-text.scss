@@ -1,107 +1,112 @@
 @use "../global" as *;
 
-
-/* Define colors and fonts for consistency */
-$text-color: #302323;
-$button-color: #302323;
-$background-color: #f9f7f4;
-$secondary-background: #fff;
-
-/* Reusable mixin for desktop-first responsiveness */
-@mixin desktop {
-  @media (min-width: 992px) {
-    @content;
-  }
-}
-
 .image-with-text {
-    background-color: $secondary-background;
-    background-image: url('assets/images/ornate-pattern.png');
-    background-repeat: repeat;
-    padding: 80px 0;
-
-    .image-with-text__container {
+    padding: 20px 0;
+    margin: 100px 0 0 0;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/graphic-pattern-beige.png);
+        top: -150px;
+        background-repeat: no-repeat;
+        background-position:100% 0;
+        background-size: contain;
+        z-index: -1;
+    }
+    .image-with-text-container {
         display: flex;
-        flex-direction: column; /* Default stack on mobile */
-        max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
-        align-items: center;
+        padding: 0 0;
         text-align: center;
-
-        @include desktop {
-            flex-direction: row; /* Side-by-side on desktop */
-            text-align: left;
-            justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        @include mobile {
+            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
-
-    .image-with-text__text {
-        padding-bottom: 30px;
-
-        @include desktop {
-            flex: 1;
-            padding-right: 50px;
-            padding-bottom: 0;
+    .image-with-text-text {
+        width: 50%;
+        padding: 40px;
+        @include mobile {
+            width: 100%;
         }
-
         h2 {
             font-size: 40px;
-            color: $text-color;
             font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: $dark-charcoal-brown;
+            font-family: $font-secondary;
         }
-
         p {
-            color: lighten($text-color, 30%);
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
             line-height: 1.5;
+            letter-spacing: normal;
+            color: $dark-charcoal-brown;
+            font-family: $font-primary;
             margin: 20px 0;
         }
     }
 
-    .image-with-text__image {
-        flex: 1;
-        
-        img {
-            max-width: 100%;
-            height: auto;
+    .image-with-text-image {
+        width: 50%;
+        @include mobile {
+            width: 100%;
+        }
+        .image-wrapper {
             display: block;
-        }
-
-        @include desktop {
-            max-width: 50%; /* Image container width on desktop */
+            width: 100%;
+            position: relative;
+            height: 50vw;
+            max-height: 600px;
+            img {
+                position: absolute;
+                -o-object-fit: cover;
+                object-fit: cover;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+            }
         }
     }
-
-    // Button style
-    .image-with-text__button {
+    .btn {
         display: inline-block;
-        padding: 12px 24px;
-        border: 1px solid $button-color;
-        background-color: $button-color;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: background-color 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            background-color: transparent;
-            color: $button-color;
-        }
+        border: 1px solid $dark-charcoal-brown;
+        background-color: $dark-charcoal-brown;
+        color: $white;
     }
-}
-
-.image-with-text--reversed {
-    .image-with-text__container {
-        @include desktop {
-            flex-direction: row-reverse; /* Flips the columns */
+    &.image-with-text-reversed {
+        margin: 0 0 0 0;
+        &:before {
+            top: auto;
+            background-position: 100% 0;
+            bottom: -150px; 
+            width: 50%;
+            left: 0;
+            right: auto;
+            background-size: contain;
+            transform: rotate(180deg);
         }
-    }
+        .image-with-text-container {
+            flex-direction: row-reverse;
 
-    .image-with-text__text {
-        @include desktop {
-            padding-right: 0;
-            padding-left: 50px;
+            @include mobile {
+                flex-direction: row;
+            }
         }
     }
 }
