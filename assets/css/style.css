@@ -1419,7 +1419,6 @@ header .mega-menu .mega-menu-container .mega-column ul li a:hover {
   }
 }
 .tab-content-container .collection-tabs {
-  overflow: scroll;
   display: flex;
   width: 100%;
   flex-direction: column;

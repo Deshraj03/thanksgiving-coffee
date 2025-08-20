@@ -13,8 +13,7 @@
     @include mobile {
         margin: 0;
     }
-    .collection-tabs {
-        overflow: scroll;
+    .collection-tabs { 
         display: flex;
         width: 100%;
         flex-direction: column;
