@@ -182,6 +182,12 @@ a.btn,.btn {
   }
 }
 
+@mixin tablet-min {
+   @media (min-width: 768px) {
+    @content;
+  }
+}
+
 @mixin desktop-max {
   @media (max-width: 1440px) {
     @content;

@@ -1,0 +1,170 @@
+@use "../global" as *;
+
+.instagram-section {
+    width: 100%;
+    margin: 120px 0 0 0;
+    position: relative;
+    @include mobile {
+        margin: 60px 0 0 0;
+    }
+    .instagram-header {
+        margin-bottom: 20px;
+        text-align: center;
+        display: none;
+        @include mobile {
+            display: block;
+        }
+        .insta-icon {
+            width: 43px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            img {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: inline-block;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: $dark-charcoal-brown;
+            font-family: $font-secondary;
+            margin: 10px 0 10px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 3px;
+            font-family: $font-primary;
+            color: #beae93;
+        }
+    }
+    .instagram-post-slider {
+        padding: 0 10px 10px;
+        .splide__track {
+            position: relative;
+            padding: 0;
+        }
+
+        @include tablet-min {
+            &.splide {
+                visibility: visible;
+            }
+            .splide__list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0 0 60px;
+
+                .splide__slide {
+                    width: calc(20% - 10px);
+                }
+            }
+        }
+        @include tablet {
+            .splide__slide {
+                width: calc(20.2% - 10px) !important;
+            }
+        }
+
+        @include mobile {
+            .splide__list {
+                display: flex !important;
+                gap: 0 !important;
+            }
+
+            .splide__slide {
+                width: 50% !important;
+            }
+        }
+        @media (min-width: 320px) and (max-width: 480px) {
+            .splide__slide {
+                width: 100% !important;
+            }
+        }
+        .splide__slide {
+            list-style: none;
+
+            a {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: calc(20vw - 10px);
+                border-radius: 5px;
+                max-height: 376px;
+                overflow: hidden;
+                background-color: $black;
+                cursor: pointer;
+
+                @include mobile {
+                    height: calc(100vw - 10px);
+                }
+
+                &:hover img {
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+
+                img {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+
+                .insta-image-caption {
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(48, 35, 35, 0.5);
+
+                    p {
+                        font-size: 40px;
+                        color: $white;
+                        font-family: $font-secondary;
+                        text-align: center;
+                        @include tablet {
+                            font-size: 26px;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            font-weight: 800;
+                            letter-spacing: 3px;
+                            color: #d8cfbe;
+                            @include tablet {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .splide.is-initialized:not(.is-active) .splide__list {
+        display: flex;
+    }
+}

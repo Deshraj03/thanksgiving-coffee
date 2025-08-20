@@ -5,6 +5,9 @@
     padding: 0;
     width: 100%;
     box-sizing: border-box;
+    @include tablet {
+        margin: -87px 0 0;
+    }
     @include mobile {
         margin: -87px 0 0;
         background: $dark-charcoal-brown;
@@ -52,6 +55,9 @@
                 line-height: normal;
                 letter-spacing: 3px;
                 color: $white;
+                @include mobile {
+                    margin: 0 0 10px;
+                }
             }
             h2 {
                 font-size: 90px;
@@ -65,8 +71,8 @@
                 margin: 0 0 20px;
                 padding: 0;
                 @include mobile {
-                    font-size: 28px;
-                    line-height: 1.07;
+                    font-size: 38px;
+                    line-height: 1;
                     letter-spacing: normal;
                 }
             }

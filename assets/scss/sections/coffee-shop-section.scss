@@ -13,9 +13,15 @@
         align-items: flex-start;
 
         .text-content {
-            flex: 1;
+            width: 50%;
             padding-right: 50px;
             text-align: left;
+            @media (min-width: 1025px) and (max-width: 1130px) {
+                width: 60%;
+            }
+            @include tablet {
+                width: 60%;
+            }
             @include mobile {
                 flex: auto;
                 padding-right: 0;
@@ -50,7 +56,6 @@
                     font-size: 45px;
                 }
             }
-
             p {
                 font-family: $font-primary;
                 color: $dark-charcoal-brown;
@@ -64,19 +69,72 @@
         }
 
         .image-content {
-            flex: 1;
+            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            img {
+            position: relative;
+            @media (min-width: 1025px) and (max-width: 1130px) {
+                width: 40%;
+            }
+            @include tablet {
+                width: 40%;
+            }
+            @include mobile {
+                width: 0%;
+            }
+            &:before {
+                background: url(../images/graphic-fancy-cup.png);
+                content: "";
                 position: absolute;
-                right: 0;
-                top: 0;
-                max-width: 720px;
+                width: 370px;
+                background-repeat: no-repeat;
+                background-position: 100% 0;
+                background-size: contain;
+                z-index: -1;
+                height: 300px;
+                top: -47px;
+                left: 0;
+                @include tablet {
+                    left: -80px;
+                }
+                @include mobile {
+                    width: 107px;
+                    height: 215px;
+                    top: -77px;
+                    left: -76px;
+                    background: url(../images/graphic-fancy-cup-mobile.png);
+                    background-repeat: no-repeat;
+                    background-position: 100% 0;
+                    background-size: contain;
+                }
+            }
+            &:after {
+                background: url(../images/graphic-fancy-leaf.png);
+                content: "";
+                position: absolute;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 100% 0;
+                background-size: contain;
+                z-index: -2;
+                height: 100px;
+                right: -30px;
+                top: 268px;
+            }
+            img {
+                position: relative;
+                right: -90px;
+                top: -125px;
+                z-index: -1;
+                max-width: 600px;
+                @include tablet {
+                    right: -130px;
+                }
                 @include mobile {
                     left: 70%;
                     max-width: 480px;
+                    display: none;
                 }
             }
         }
@@ -84,144 +142,6 @@
             display: block;
             margin: 0px 0 15px;
             padding: 0px;
-        }
-    }
-
-    .collection-tabs {
-        display: flex;
-        gap: 15px;
-        margin: 0 0 30px 0;
-
-        button {
-            font-family: $font-primary;
-            font-size: 14px;
-            font-weight: 800;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: 2.8px;
-            text-align: center;
-            border: 1px solid $dark-charcoal-brown;
-            color: $dark-charcoal-brown;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            padding: 12px 20px;
-            border-radius: 5px;
-            background: transparent;
-
-            &.active {
-                background-color: $dark-charcoal-brown;
-                color: $white;
-            }
-
-            &:hover {
-                background-color: $dark-charcoal-brown;
-                color: $white;
-            }
-        }
-    }
-    .tab-content-container {
-        margin: 80px 0 0;
-        padding: 0;
-        width: 100%;
-        .tab-content {
-            display: none;
-            text-align: center;
-            &.active {
-                display: block;
-            }
-        }
-        .container {
-            display: inline-block;
-        }
-        .image-wrapper {
-            display: block;
-            width: 100%;
-            position: relative;
-            height: calc(25vw - 30px);
-            max-height: 270px;
-            @include mobile {
-                height: calc(80vw - 30px);
-            }
-            img {
-                position: absolute;
-                -o-object-fit: cover;
-                object-fit: cover;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                appearance: none;
-                -moz-appearance: none;
-                -webkit-appearance: none;
-            }
-        }
-        .product-card {
-            padding: 20px;
-            background-color: #f1ece6;
-            text-align: left;
-            height: 100%;
-            span.product-roast {
-                font-size: 12px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: 1.2px;
-                color: $dark-charcoal-brown;
-                opacity: 0.5;
-                font-family: $font-primary;
-            }
-            h3.product-title {
-                font-size: 20px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.15;
-                letter-spacing: normal;
-                font-family: $font-secondary;
-                margin: 0 0 40px;
-                color: $dark-charcoal-brown;
-            }
-            p.product-price {
-                font-size: 16px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.5;
-                letter-spacing: normal;
-                color: $dark-charcoal-brown;
-                font-family: $font-primary;
-            }
-            .product-reviews {
-                color: $dark-charcoal-brown;
-                font-family: $font-primary;
-                font-size: 12px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: 1px;
-                display: inline-flex;
-                gap: 10px;
-                margin: 0px;
-                padding: 0px;
-                align-items: center;
-                justify-content: center;
-                .rating-stars {
-                    display: inline-flex;
-                    gap: 2px;
-                    margin: 0px;
-                    padding: 0px;
-                    align-items: center;
-                    justify-content: center;
-                    svg {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-            }
         }
     }
 }

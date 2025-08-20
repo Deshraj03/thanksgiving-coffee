@@ -53,20 +53,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// Banner-slider
-
+// Awards slider 
 document.addEventListener('DOMContentLoaded', function () {
   const splide = new Splide('#awards-slider', {
     type: 'carousel',
     perPage: 5,
+    perMove: 3,
     arrows: false,
     pagination: false,
-    autoplay: false,
+    autoplay: true,
     interval: 4000,
     breakpoints: {
-      1024: { perPage: 3 },
-      768: { perPage: 3 },
-      480: { perPage: 3 }
+      1024: { perPage: 5 }, 
+      767: { perPage: 3 }
     }
   });
 
@@ -188,3 +187,83 @@ document.addEventListener('DOMContentLoaded', function () {
   splide.mount();
 });
 
+// product-slider
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#all-product-slider', {
+    type: 'carousel',
+    perPage: 4,
+    perMove: 1,
+    arrows: true,
+    gap: '10px',
+    pagination: false,
+    autoplay: false,
+    interval: 3000,
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 }
+    }
+  });
+
+  splide.mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const splide = new Splide('#community-slider', {
+    type: 'carousel',
+    perPage: 3,
+    perMove: 1,
+    arrows: true,
+    gap: '10px',
+    pagination: false,
+    autoplay: false,
+    interval: 3000,
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 }
+    }
+  });
+
+  splide.mount();
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let splide;
+
+  function initSplide() {
+    if (window.innerWidth <= 767) {  
+      if (!splide) {
+        splide = new Splide(".instagram-post-slider", {
+          type: "loop",
+          perPage: 2,
+          gap: "10px",
+          pagination: false,
+          arrows: true,
+          breakpoints: {
+            480: { perPage: 1 }
+          }
+        }).mount();
+      }
+    } else {
+      if (splide) {
+        splide.destroy();
+        splide = null;
+      }
+    }
+  }
+
+  initSplide();
+  window.addEventListener("resize", initSplide);
+});
+
+document.querySelectorAll(".accordion-title").forEach((title) => {
+  title.addEventListener("click", () => {
+    if (window.innerWidth < 768) {  
+      title.classList.toggle("active");
+      const content = title.nextElementSibling;
+      content.classList.toggle("open");
+    }
+  });
+});

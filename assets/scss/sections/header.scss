@@ -15,6 +15,11 @@ header {
       }
     }
   }
+  @include mobile{
+    .container{
+      padding: 0 20px;
+    }
+  }
   .navbar {
     display: flex;
     align-items: stretch;

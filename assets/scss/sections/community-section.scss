@@ -1,0 +1,186 @@
+@use "../global" as *;
+
+.community-section {
+  width: 100%;
+  margin: 100px 0 0;
+  padding: 0;
+  position: relative;
+  @include mobile {
+    margin: 40px 0 0;
+  }
+
+  .icon-wrapper {
+    width: 144px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 60px;
+    @include mobile {
+      display: flex;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: inline-block;
+    }
+  }
+  .community-section-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    @include tablet {
+      gap: 30px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .community-text {
+      width: 25%;
+      @include tablet {
+        width: 30%;
+      }
+      @include mobile {
+        width: 100%;
+        padding: 0 20px;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: $dark-charcoal-brown;
+        font-family: $font-secondary;
+        @include tablet {
+          font-size: 30px;
+        }
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $dark-charcoal-brown;
+        font-family: $font-primary;
+        margin: 20px 0 0;
+      }
+
+      .btn {
+        margin: 20px 0 0;
+        background: $dark-charcoal-brown;
+        color: $white;
+        display: inline-flex;
+        border: 0px solid $dark-charcoal-brown;
+        &:hover {
+          background: none;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .splide {
+      width: 75%;
+      @include tablet {
+       width: 70%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      .splide__track {
+        overflow: hidden;
+      }
+
+      .splide__slide {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        .image-wrapper {
+          display: block;
+          width: 100%;
+          position: relative;
+          height: calc(75vw - 40px);
+          max-height: 400px;
+          overflow: hidden;
+           @include tablet {
+             height: calc(70vw - 40px);
+          }
+          @include mobile {
+            height: 100vw;
+          }
+          img {
+            position: absolute;
+            -o-object-fit: cover;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            transition: transform 0.3s ease;
+          }
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+        }
+        .slide-caption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: $white;
+          font-size: 25px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.2;
+          letter-spacing: normal;
+          font-family: $font-secondary;
+          height: 100%;
+          display: inline-flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+      .splide__arrow {
+        background: #302323;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        svg {
+          fill: #fff;
+        }
+        &:hover {
+          opacity: 0.9;
+        }
+        &.splide__arrow--prev {
+          left: -15px;
+          @include mobile {
+            left: -5px;
+          }
+        }
+        &.splide__arrow--next {
+          right: -15px;
+          @include mobile {
+            right: -5px;
+          }
+        }
+      }
+    }
+  }
+}

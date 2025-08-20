@@ -410,39 +410,40 @@
                     alt="A black and white photo of a coffee farm building with people and a dog.">
             </div>
         </div>
+    </section>
 
-        <div class="tab-content-container">
-            <div class="container">
-                <div class="collection-tabs">
-                    <button class="tab-btn active" data-tab="featured">Featured Coffees</button>
-                    <button class="tab-btn" data-tab="clubs">Coffee Clubs</button>
-                    <button class="tab-btn" data-tab="shopall">Shop All</button>
-                </div>
+    <section class="tab-content-container">
+        <div class="container">
+            <div class="collection-tabs">
+                <ul>
+                    <li><button class="tab-btn active" data-tab="featured">Featured Coffees</button></li>
+                    <li><button class="tab-btn" data-tab="clubs">Coffee Clubs</button></li>
+                    <li><button class="tab-btn" data-tab="shopall">Shop All</button></li>
+                </ul> 
             </div>
-            <div class="tab-content active" id="featured">
-                <div class="container">
-                    <div class="slider-container">
-                        <div id="product-slider" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
+        </div>
+        <div class="tab-content active" id="featured">
+            <div class="container">
+                <div class="slider-container">
+                    <div id="product-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="sale-tag">Sale</div>
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast
-                                                    Sweet, Fruity, Chocolatey</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
-                                                <div class="rating-stars">
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast
+                                                Sweet, Fruity, Chocolatey</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
 
-                                                </div>
-                                                <div class="product-reviews">
+                                            <div class="product-reviews">
                                                 <div class="rating-stars">
                                                     <svg class="star-filled" viewBox="0 0 24 24">
                                                         <path
@@ -464,160 +465,961 @@
                                                         <path
                                                             d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
                                                     </svg>
-                                                </div> 100 REVIEWS</div>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
                                                 <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
                                                 <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
                                                 <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
                                                 <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="tab-content" id="clubs">
-                <div class="container">
-                    <div class="slider-container">
-                        <div id="coffee-clubs-product-slider" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast
-                                                    Sweet, Fruity, Chocolatey</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
-                                                <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+        <div class="tab-content" id="clubs">
+            <div class="container">
+                <div class="slider-container">
+                    <div id="coffee-clubs-product-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast
+                                                Sweet, Fruity, Chocolatey</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="tab-content" id="shopall">
-                <div class="container">
-                    <div class="slider-container">
-                        <div id="product-slider" class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="product-card">
-                                            <div class="image-wrapper">
-                                                <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
-                                                <div class="hover-overlay">
-                                                    <button class="add-to-bag-btn">ADD TO BAG</button>
-                                                </div>
-                                            </div>
-                                            <div class="product-card-inner">
-                                                <span class="product-roast">Light Roast
-                                                    Sweet, Fruity, Chocolatey</span>
-                                                <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
-                                                <p class="product-price">$18.00</p>
-                                                <!-- Star Rating -->
-                                                <div class="rating-stars">
-
-                                                </div>
-                                                <p class="product-reviews">100 REVIEWS</p>
+        <div class="tab-content" id="shopall">
+            <div class="container">
+                <div class="slider-container">
+                    <div id="all-product-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast
+                                                Sweet, Fruity, Chocolatey</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-2.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/dummy-product-image.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="product-card">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/product-placeholder-3.png" alt="Coffee Bag">
+                                            <div class="hover-overlay">
+                                                <button class=" btn">ADD TO BAG</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-inner">
+                                            <span class="product-roast">Light Roast</span>
+                                            <h3 class="product-title">Nicaragua - Flor de Jinotega, Light Roast</h3>
+                                            <p class="product-price">$18.00</p>
+                                            <div class="product-reviews">
+                                                <div class="rating-stars">
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-filled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                    <svg class="star-unfilled" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M12 17.27l6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73-1.64 7.03z" />
+                                                    </svg>
+                                                </div> <span>100 REVIEWS</span>
+                                            </div>
+                                            <button class="btn">ADD TO BAG</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -660,6 +1462,223 @@
             </div>
         </div>
     </section>
+
+    <section class="community-section">
+        <div class="icon-wrapper">
+            <img src="assets/images/icon-divider.png" alt="divider Icon" class="divider-icon">
+        </div>
+        <div class="community-section-container container">
+            <div class="community-text">
+                <h2>Coffee. Us. You. Community.</h2>
+                <p>
+                    Every great cup, steeped with a great purpose. You get coffee, they get support.
+                    We have raised $500,000 and counting...
+                </p>
+                <a href="#" class="btn">Learn & Shop</a>
+            </div>
+            <div class="splide" id="community-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/bird.jpg" alt="Birding">
+                            </div>
+                            <div class="slide-caption">American Birding Association</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/horses.jpg" alt="Wild Horses"></div>
+                            <div class="slide-caption">American Wild Horse Campaign</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/rhino.jpg" alt="Rhino">
+                            </div>
+                            <div class="slide-caption">Baby Rhino Rescue</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/bird.jpg" alt="Birding">
+                            </div>
+                            <div class="slide-caption">American Birding Association</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/horses.jpg" alt="Wild Horses"></div>
+                            <div class="slide-caption">American Wild Horse Campaign</div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="image-wrapper"><img src="assets/images/rhino.jpg" alt="Rhino">
+                            </div>
+                            <div class="slide-caption">Baby Rhino Rescue</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="instagram-section">
+        <div class="instagram-header">
+            <div class="icon-wrapper">
+                <img src="assets/images/instagram-icon.jpg" alt="Instagram Icon" class="insta-icon">
+            </div>
+            <h3>@ajustcup</h3>
+            <p>FOLLOW US</p>
+        </div>
+        <div class="instagram-post-slider splide" aria-label="Instagram Slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="#"><img src="assets/images/insta-image-1.jpg" alt="Follow Us">
+                            <div class="insta-image-caption">
+                                <p>@ajustcup<span>Follow Us</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img src="assets/images/insta-image-2.jpg" alt="Coffee Moment"></a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img src="assets/images/insta-image-3.jpg" alt="Iced Coffee"></a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img src="assets/images/insta-image-4.jpg" alt="Coffee Cheers"></a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img src="assets/images/insta-image-5.jpg" alt="Cafe Interior"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-menu-item">
+                    <div class="footer-column">
+                        <h4 class="accordion-title">Shop By
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="matrix(-1 0 0 1 40 0)" fill="none" fill-rule="evenodd">
+                                        <path stroke="#302323" stroke-width="2" d="m22 11-7 9 7 9"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h4>
+                        <ul class="accordion-content">
+                            <li><a href="#">Roasts</a></li>
+                            <li><a href="#">Type</a></li>
+                            <li><a href="#">Coffee Clubs</a></li>
+                            <li><a href="#">Teas</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="accordion-title">About
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="matrix(-1 0 0 1 40 0)" fill="none" fill-rule="evenodd">
+                                        <path stroke="#302323" stroke-width="2" d="m22 11-7 9 7 9"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h4>
+                        <ul class="accordion-content">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Our Farmers</a></li>
+                            <li><a href="#">Awards & Recognition</a></li>
+                            <li><a href="#">Cause Coffee</a></li>
+                            <li><a href="#">CBD Coffee</a></li>
+                            <li><a href="#">Coffee 101</a></li>
+                            <li><a href="#">Impact Report</a></li>
+                            <li><a href="#">Land Acknowledgement</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="accordion-title">More
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="matrix(-1 0 0 1 40 0)" fill="none" fill-rule="evenodd">
+                                        <path stroke="#302323" stroke-width="2" d="m22 11-7 9 7 9"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </h4>
+                        <ul class="accordion-content">
+                            <li><a href="#">Wholesale</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-column newsletter">
+                    <h4>Connect with us</h4>
+                    <p>Subscribe to our newsletter</p>
+                    <form>
+                        <input type="email" placeholder="Email Address" />
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="footer-meta">
+                        <div class="certified">
+                            <img src="assets/images/icon-benefits-b-crop.png" alt="Certified B Corporation" />
+                            <span>Certified B Corporation</span>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"> <svg width="25" height="25" viewBox="0 0 25 25"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.5 6.083c1.153 0 2.223.288 3.209.865a6.436 6.436 0 0 1 2.343 2.343c.577.986.865 2.056.865 3.209a6.245 6.245 0 0 1-.865 3.209 6.436 6.436 0 0 1-2.343 2.343 6.245 6.245 0 0 1-3.209.865 6.245 6.245 0 0 1-3.209-.865 6.436 6.436 0 0 1-2.343-2.343 6.245 6.245 0 0 1-.865-3.209c0-1.153.288-2.223.865-3.209A6.436 6.436 0 0 1 9.29 6.948a6.245 6.245 0 0 1 3.209-.865zm0 10.602c1.153 0 2.14-.409 2.958-1.227.818-.819 1.227-1.805 1.227-2.958 0-1.153-.409-2.14-1.227-2.958-.819-.818-1.805-1.227-2.958-1.227-1.153 0-2.14.409-2.958 1.227-.818.819-1.227 1.805-1.227 2.958 0 1.153.409 2.14 1.227 2.958.819.818 1.805 1.227 2.958 1.227zm8.203-10.881c-.037.409-.195.762-.474 1.06a1.359 1.359 0 0 1-1.033.446c-.409 0-.762-.149-1.06-.446a1.448 1.448 0 0 1-.446-1.06c0-.41.149-.763.446-1.06a1.448 1.448 0 0 1 1.06-.447c.41 0 .763.149 1.06.446.298.298.447.651.447 1.06zm4.241 1.506c.037 1.042.056 2.772.056 5.19 0 2.418-.028 4.157-.084 5.218-.056 1.06-.214 1.98-.474 2.762a6.504 6.504 0 0 1-1.535 2.427 6.504 6.504 0 0 1-2.427 1.535c-.781.26-1.702.418-2.762.474-1.06.056-2.8.084-5.218.084s-4.157-.028-5.218-.084c-1.06-.056-1.98-.232-2.762-.53a5.948 5.948 0 0 1-2.427-1.479A6.504 6.504 0 0 1 .558 20.48c-.26-.781-.418-1.702-.474-2.762C.028 16.658 0 14.918 0 12.5s.028-4.157.084-5.218c.056-1.06.214-1.98.474-2.762.335-.93.846-1.74 1.535-2.427A6.504 6.504 0 0 1 4.52.558C5.301.298 6.222.14 7.282.084 8.342.028 10.082 0 12.5 0s4.157.028 5.218.084c1.06.056 1.98.214 2.762.474.93.335 1.74.846 2.427 1.535a6.504 6.504 0 0 1 1.535 2.427c.26.781.428 1.711.502 2.79zm-2.678 12.556c.223-.632.372-1.637.446-3.013.037-.819.056-1.972.056-3.46v-1.786a79.03 79.03 0 0 0-.056-3.46c-.074-1.413-.223-2.418-.446-3.013-.447-1.153-1.247-1.953-2.4-2.4-.595-.223-1.6-.372-3.013-.446a81.415 81.415 0 0 0-3.46-.056h-1.786c-1.488 0-2.641.019-3.46.056-1.376.074-2.38.223-3.013.446-1.153.447-1.953 1.247-2.4 2.4-.223.595-.372 1.6-.446 3.013a81.415 81.415 0 0 0-.056 3.46v1.786c0 1.488.019 2.641.056 3.46.074 1.376.223 2.38.446 3.013.484 1.153 1.284 1.953 2.4 2.4.632.223 1.637.372 3.013.446.819.037 1.972.056 3.46.056h1.786a79.03 79.03 0 0 0 3.46-.056c1.413-.074 2.418-.223 3.013-.446 1.153-.484 1.953-1.284 2.4-2.4z"
+                                        fill="#302323" fill-rule="nonzero" />
+                                </svg>
+                            </a>
+                            <a href="#"><svg width="25" height="25" viewBox="0 0 25 25"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 1.395c0-.41-.14-.744-.419-1.004A1.386 1.386 0 0 0 23.605 0H1.395C.985 0 .651.13.391.39.13.652 0 .987 0 1.396v22.21c0 .372.13.697.39.976.261.28.596.419 1.005.419h11.942v-9.71H10.1v-3.739h3.237v-2.79c0-1.6.446-2.827 1.34-3.683.892-.856 2.064-1.283 3.515-1.283 1.153 0 2.12.037 2.902.111V7.31h-2.01c-.706 0-1.208.168-1.506.503-.223.26-.335.706-.335 1.339v2.4h3.74l-.503 3.738h-3.237V25h6.362c.41 0 .744-.14 1.004-.419.26-.279.391-.604.391-.976V1.395z"
+                                        fill="#302323" fill-rule="nonzero" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-meta for-mobile">
+                <div class="certified">
+                    <img src="assets/images/icon-benefits-b-crop.png" alt="Certified B Corporation" />
+                    <span>Certified B Corporation</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#"> <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5 6.083c1.153 0 2.223.288 3.209.865a6.436 6.436 0 0 1 2.343 2.343c.577.986.865 2.056.865 3.209a6.245 6.245 0 0 1-.865 3.209 6.436 6.436 0 0 1-2.343 2.343 6.245 6.245 0 0 1-3.209.865 6.245 6.245 0 0 1-3.209-.865 6.436 6.436 0 0 1-2.343-2.343 6.245 6.245 0 0 1-.865-3.209c0-1.153.288-2.223.865-3.209A6.436 6.436 0 0 1 9.29 6.948a6.245 6.245 0 0 1 3.209-.865zm0 10.602c1.153 0 2.14-.409 2.958-1.227.818-.819 1.227-1.805 1.227-2.958 0-1.153-.409-2.14-1.227-2.958-.819-.818-1.805-1.227-2.958-1.227-1.153 0-2.14.409-2.958 1.227-.818.819-1.227 1.805-1.227 2.958 0 1.153.409 2.14 1.227 2.958.819.818 1.805 1.227 2.958 1.227zm8.203-10.881c-.037.409-.195.762-.474 1.06a1.359 1.359 0 0 1-1.033.446c-.409 0-.762-.149-1.06-.446a1.448 1.448 0 0 1-.446-1.06c0-.41.149-.763.446-1.06a1.448 1.448 0 0 1 1.06-.447c.41 0 .763.149 1.06.446.298.298.447.651.447 1.06zm4.241 1.506c.037 1.042.056 2.772.056 5.19 0 2.418-.028 4.157-.084 5.218-.056 1.06-.214 1.98-.474 2.762a6.504 6.504 0 0 1-1.535 2.427 6.504 6.504 0 0 1-2.427 1.535c-.781.26-1.702.418-2.762.474-1.06.056-2.8.084-5.218.084s-4.157-.028-5.218-.084c-1.06-.056-1.98-.232-2.762-.53a5.948 5.948 0 0 1-2.427-1.479A6.504 6.504 0 0 1 .558 20.48c-.26-.781-.418-1.702-.474-2.762C.028 16.658 0 14.918 0 12.5s.028-4.157.084-5.218c.056-1.06.214-1.98.474-2.762.335-.93.846-1.74 1.535-2.427A6.504 6.504 0 0 1 4.52.558C5.301.298 6.222.14 7.282.084 8.342.028 10.082 0 12.5 0s4.157.028 5.218.084c1.06.056 1.98.214 2.762.474.93.335 1.74.846 2.427 1.535a6.504 6.504 0 0 1 1.535 2.427c.26.781.428 1.711.502 2.79zm-2.678 12.556c.223-.632.372-1.637.446-3.013.037-.819.056-1.972.056-3.46v-1.786a79.03 79.03 0 0 0-.056-3.46c-.074-1.413-.223-2.418-.446-3.013-.447-1.153-1.247-1.953-2.4-2.4-.595-.223-1.6-.372-3.013-.446a81.415 81.415 0 0 0-3.46-.056h-1.786c-1.488 0-2.641.019-3.46.056-1.376.074-2.38.223-3.013.446-1.153.447-1.953 1.247-2.4 2.4-.223.595-.372 1.6-.446 3.013a81.415 81.415 0 0 0-.056 3.46v1.786c0 1.488.019 2.641.056 3.46.074 1.376.223 2.38.446 3.013.484 1.153 1.284 1.953 2.4 2.4.632.223 1.637.372 3.013.446.819.037 1.972.056 3.46.056h1.786a79.03 79.03 0 0 0 3.46-.056c1.413-.074 2.418-.223 3.013-.446 1.153-.484 1.953-1.284 2.4-2.4z"
+                                fill="#302323" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                    <a href="#"><svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25 1.395c0-.41-.14-.744-.419-1.004A1.386 1.386 0 0 0 23.605 0H1.395C.985 0 .651.13.391.39.13.652 0 .987 0 1.396v22.21c0 .372.13.697.39.976.261.28.596.419 1.005.419h11.942v-9.71H10.1v-3.739h3.237v-2.79c0-1.6.446-2.827 1.34-3.683.892-.856 2.064-1.283 3.515-1.283 1.153 0 2.12.037 2.902.111V7.31h-2.01c-.706 0-1.208.168-1.506.503-.223.26-.335.706-.335 1.339v2.4h3.74l-.503 3.738h-3.237V25h6.362c.41 0 .744-.14 1.004-.419.26-.279.391-.604.391-.976V1.395z"
+                                fill="#302323" fill-rule="nonzero" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2022 Thanksgiving Coffee Company. All Rights Reserved</p>
+                <p class="designed">Designed by Sleepless</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/splide.min.js"></script>
