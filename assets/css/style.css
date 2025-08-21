@@ -1829,9 +1829,9 @@ header .sidebar .navbar svg path {
 .image-with-text .image-with-text-image .image-wrapper {
   display: block;
   width: 100%;
-  position: relative;
   height: 50vw;
   max-height: 600px;
+  position: relative;
   border-radius: 5px;
   overflow: hidden;
 }
