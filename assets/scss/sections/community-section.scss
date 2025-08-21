@@ -5,7 +5,7 @@
   margin: 100px 0 0;
   padding: 0;
   position: relative;
-   z-index: 2;
+  z-index: 2;
   @include mobile {
     margin: 60px 0 0;
   }
@@ -93,7 +93,7 @@
     .splide {
       width: 75%;
       @include tablet {
-       width: 70%;
+        width: 70%;
       }
       @include mobile {
         width: 100%;
@@ -112,9 +112,10 @@
           position: relative;
           height: calc(75vw - 40px);
           max-height: 400px;
+          border-radius: 5px;
           overflow: hidden;
-           @include tablet {
-             height: calc(70vw - 40px);
+          @include tablet {
+            height: calc(70vw - 40px);
           }
           @include mobile {
             height: 100vw;
@@ -138,6 +139,7 @@
           transform: scale(1.05);
         }
         .slide-caption {
+          border-radius: 5px;
           position: absolute;
           bottom: 0;
           left: 0;

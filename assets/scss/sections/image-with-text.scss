@@ -21,7 +21,7 @@
         background-position: 100% 0;
         background-size: contain;
         background-attachment: fixed;
-        z-index: 0;
+        z-index: -1;
         @include mobile {
             bottom: 45px;
             background-attachment: scroll;
@@ -88,7 +88,10 @@
             width: 100%;
             position: relative;
             height: 50vw;
+            min-height: 70svw;
             max-height: 600px;
+            border-radius: 5px;
+            overflow: hidden;
             img {
                 position: absolute;
                 -o-object-fit: cover;
