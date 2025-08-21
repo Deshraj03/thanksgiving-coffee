@@ -15,8 +15,8 @@ header {
       }
     }
   }
-  @include mobile{
-    .container{
+  @include mobile {
+    .container {
       padding: 0 20px;
     }
   }
@@ -36,7 +36,7 @@ header {
       background: none;
       @include mobile {
         position: relative;
-        z-index: 3;
+        z-index: 1;
         display: block;
       }
       &.active {
@@ -46,9 +46,6 @@ header {
         .menu-close {
           display: inline-block;
         }
-      }
-      .menu-close {
-        display: none;
       }
     }
     .logo {
@@ -128,10 +125,7 @@ header {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
-              transition:
-                opacity 0.4s ease-out,
-                transform 0.4s ease-out,
-                visibility 0s;
+               transition: max-height 0.4s ease, opacity 0.3s ease;
               &::before {
                 display: none;
               }
@@ -527,17 +521,20 @@ header {
       }
     }
   }
+  .sidebar .navbar svg path {
+    fill: #302323;
+  }
 }
 
 .sidebar {
   position: fixed;
-  top: auto;
+  top: 0;
   left: -100%;
   width: 100%;
   background: #f1ece6;
   padding: 10px 30px 30px;
   transition: left 0.3s ease;
-  z-index: 9999;
+  z-index: 9;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -568,6 +565,7 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    position: relative;
     li {
       display: inline-flex;
       width: 100%;
@@ -575,7 +573,9 @@ header {
       justify-content: flex-start;
       padding: 20px 0;
       border-bottom: 1px solid #ddd5c6;
-
+      &:last-child {
+        border: 0;
+      }
       a,
       .submenu-toggle {
         text-transform: uppercase;
@@ -598,10 +598,19 @@ header {
         font-family: $font-primary;
       }
       .child-submenu {
-        display: none;
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          opacity 0.3s ease;
         margin: 5px 0 0;
+
         &.active {
-          display: block;
+          max-height: 500px;
+          opacity: 1;
+          visibility: visible;
         }
         li {
           padding: 0;
@@ -622,15 +631,11 @@ header {
       }
       .submenu {
         display: none;
-        padding: 10px 30px 30px;
-        border-left: 2px solid #ddd;
+        padding: 0;
         height: 100%;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
         z-index: 1;
         &.active {
-          display: block;
-          animation-name: slideInRight;
           display: block;
           position: absolute;
           top: 0;
@@ -638,11 +643,11 @@ header {
           width: 100%;
           left: 0;
         }
-        &.slideInFromLeft {
+        &.slideInFromRight {
           animation-name: slideInFromLeft;
         }
 
-        &.slideOutToLeft {
+        &.slideInFromLeft {
           animation-name: slideOutToLeft;
         }
         a,

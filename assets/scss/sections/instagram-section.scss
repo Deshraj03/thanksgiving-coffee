@@ -167,4 +167,28 @@
     .splide.is-initialized:not(.is-active) .splide__list {
         display: flex;
     }
+    .splide__arrow {
+        background: #302323;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        svg {
+            fill: #fff;
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+        &.splide__arrow--prev {
+            left: -15px;
+            @include mobile {
+                left: 5px;
+            }
+        }
+        &.splide__arrow--next {
+            right: -15px;
+            @include mobile {
+                right: 5px;
+            }
+        }
+    }
 }

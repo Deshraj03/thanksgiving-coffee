@@ -176,6 +176,30 @@
             opacity: 1;
             height: 3px;
             transform: scale(1);
-        }
+        } 
     }
+    .splide__arrow {
+            background: none;
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+            display: none;
+            @include mobile {
+                display: inline-block;
+                bottom: 5px;
+                top: auto;
+            }
+            svg {
+                fill: #fff;
+            }
+            &:hover {
+                opacity: 0.9;
+            }
+            &.splide__arrow--prev {
+                left: 25px; 
+            }
+            &.splide__arrow--next {
+                right: 25px; 
+            }
+        }
 }
